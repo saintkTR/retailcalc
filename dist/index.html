@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <title>Retail Calculator</title>
+    <meta charset="windows-1252" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      table,
+      th,
+      td {
+        font-size: 20px;
+        border: 2px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <table id="table" border="5">
+      <tr>
+        <th>Retail Calculator</th>
+      </tr>
+      <tr>
+        <td>Price with GST</td>
+        <td><input type="number" class="pgst" /></td>
+      </tr>
+      <tr>
+        <td>Upfront Payment</td>
+        <td><input type="number" class="upay" /></td>
+      </tr>
+      <tr>
+        <td>Transact Discount Value</td>
+        <td><p class="transvalue" style="color: red"></p></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>
+          <p class="csm"></p>
+          CSM PRICE
+        </td>
+        <td>
+          <p class="GST"></p>
+          GST PRICE
+        </td>
+      </tr>
+      <tr></tr>
+      <tr>
+        <td>12 Months</td>
+        <td><p class="twelvecsm" style="color: red"></p></td>
+        <td><p class="twelveg"></p></td>
+      </tr>
+      <tr>
+        <td>24 Months</td>
+        <td><p class="twentycsm" style="color: red"></p></td>
+        <td><p class="twentyg"></p></td>
+      </tr>
+      <tr>
+        <td>36 Months</td>
+        <td><p class="thirtycsm" style="color: red"></p></td>
+        <td><p class="thirtyg"></p></td>
+      </tr>
+    </table>
+    <button class="btn calc">Calculate</button>
+    <button class="btn clear">Clear</button>
+    <span id="val"></span>
+    <script src="script.js"></script>
+  </body>
+</html>
